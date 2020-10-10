@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "5-tenedores",
+    "slug": "5-tenedores",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.santi.cincotenedores",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCL-iqy-6v0V-_wtaw0iN14LRD4YA49Rx8"
+        }
+      },
+      "permissions": [
+        "CAMERA_ROLL",
+        "READ_EXTERNAL_STORAGE", 
+        "WRITE_EXTERNAL_STORAGE",
+        "LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": ""
+  }
+}

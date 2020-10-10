@@ -1,0 +1,17 @@
+
+
+expo install react-native-gesture-handler@^1.6.0
+expo install react-native-reanimated@^1.7.0
+expo install react-native-screens@^2.2.0
+expo install react-native-safe-area-context@^0.7.3 
+expo install @react-native-community/masked-view@^0.1.6
+
+yarn add @react-navigation/stack@^5.2.10
+
+yarn add @react-navigation/bottom-tabs@^5.2.6
+
+
+"apiKey": AIzaSyCL-iqy-6v0V-_wtaw0iN14LRD4YA49Rx8
+
+ 
+  huella digital: A3:63:A1:8A:22:33:11:BA:68:10:6D:62:39:A7:E9:B4:54:0F:71:62
