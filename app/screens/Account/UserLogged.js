@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
    },
    btnCloseSesion: {
      width: "95%",
-    marginTop: 30,
+    marginTop: 400,
     marginLeft: "auto",
     marginRight: "auto",
     borderRadius: 10,

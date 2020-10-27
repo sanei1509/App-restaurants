@@ -74,10 +74,11 @@ const selectComponent = (key) => {
                     rightIcon={{
                         type: menu.iconType,
                         name: menu.iconNameRight,
-                        color: menu.iconColorRight
+                        color: menu.iconColorRight,
                     }}
                     containerStyle={styles.menuItem}
                     onPress={menu.onPress}
+                    titleStyle={{fontSize: 14}}
                  />
             ))}
 
@@ -131,9 +132,10 @@ const selectComponent = (key) => {
                     marginRight: "auto",
                     marginLeft: "auto",
                     width: "95%",
-                    height: 45,
+                    height: 40,
                     borderBottomWidth:1 ,
                     borderBottomColor: "#e3e3e3",
-                    borderRadius: 10,
+                    borderRadius: 5,
+                    elevation: 4,
                 },
             });

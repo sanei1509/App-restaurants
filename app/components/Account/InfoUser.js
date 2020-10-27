@@ -113,14 +113,15 @@ const styles = StyleSheet.create({
       backgroundColor: "transparent",
     //   paddingTop: 20,
     //   paddingBottom: 20,
-        padding: 20,
+        padding: 10,
         marginRight: 50,
       borderRadius: 8,
       marginBottom: 10,
     },
     userInfoAvatar: {
-     marginRight: 44,
-     
+      marginLeft: -100,
+     marginRight: 50,
+     elevation: 20,
     },
 }); 
 

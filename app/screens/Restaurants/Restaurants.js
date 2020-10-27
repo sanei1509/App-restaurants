@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { Icon } from "react-native-elements";
 import { useFocusEffect } from "@react-navigation/native";
 import { firebaseApp } from "../../utils/firebase";
 import firebase from "firebase/app";
 import "firebase/firestore";
 import ListRestaurants from "../../components/Restaurants/ListRestaurants";
+import { TouchableOpacityComponent } from 'react-native';
 
 const db = firebase.firestore(firebaseApp);
 
@@ -87,11 +88,13 @@ export default function Restaurants(props) {
         
         {user && ( 
             <Icon
-                 reverse type = "material-community"
+                 type = "material-community"
                  name = "plus"
                  color = "#00a790"
-                 containerStyle = { styles.btnContainer }
-                 iconStyle = { styles.btnStyle }
+                 size={30}
+                 activeOpacity={.1}
+                 containerStyle = { [styles.btnContainer] }
+                //  iconStyle = {{,}} 
                  onPress = {() => navigation.navigate("add-restaurants") }
                 />
                     )}
@@ -106,10 +109,14 @@ const styles = StyleSheet.create({
     },
     btnContainer: {
         position: "absolute",
-        bottom: 10,
-        right: 10,
-        shadowColor: "black",
-        shadowOffset: { width: 2, height: 4 },
-        shadowOpacity: 0.8,
+        bottom:30,
+        right: 25,
+        padding: 15,
+        width: 60,
+        height: 60,
+        backgroundColor: "#fff",
+        borderRadius: 100,   
+        elevation: 10,
     },
+    
 });

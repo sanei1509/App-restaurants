@@ -77,6 +77,7 @@ export default function ChangePasswordForm(props) {
     return(
         <View style={styles.view}> 
             <Input 
+            inputStyle={{fontSize: 14,}}
             placeholder= "Nueva contraseña"
             containerStyle={styles.inputForm}
             secureTextEntry={showPassword ? false : true}
@@ -91,6 +92,7 @@ export default function ChangePasswordForm(props) {
             errorMessage={errors.newPassword}
             />
             <Input 
+            inputStyle={{fontSize: 14,}}
             placeholder= "Repetir nueva contraseña"
             containerStyle={styles.inputForm}
             secureTextEntry={showPassword ? false : true}
@@ -105,6 +107,7 @@ export default function ChangePasswordForm(props) {
             errorMessage={errors.repeatNewPassword}
            />
             <Input 
+            inputStyle={{fontSize: 14,}}
             placeholder= "Contraseña actual para confirmar"
             containerStyle={styles.inputSecurity}
             secureTextEntry={showConfirmPassword ? false : true }
@@ -120,6 +123,7 @@ export default function ChangePasswordForm(props) {
             />
             <Button 
                 title= "Cambiar contraseña"
+                titleStyle={{fontSize: 15,}}    
                 containerStyle={styles.btnContainer}
                 buttonStyle={styles.btnChangePassword}
                 onPress={onSubmit}
@@ -141,12 +145,12 @@ export default function ChangePasswordForm(props) {
     const styles = StyleSheet.create({
         view: {
             // alignItems: "center",
-            paddingBottom: 10,
+            paddingBottom: -20,
         },
         inputForm: {
             width: "100%",
             marginTop: 10,
-            marginBottom: 10,
+            marginBottom: -5,
         },
         inputSecurity: {
             width: "100%",
@@ -155,6 +159,7 @@ export default function ChangePasswordForm(props) {
         btnContainer: {
             marginTop:15,
             width:"99%",
+            marginBottom: -10,
         },
         btnChangePassword:{
             backgroundColor:"#00a680",

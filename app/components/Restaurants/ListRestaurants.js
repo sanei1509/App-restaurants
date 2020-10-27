@@ -22,8 +22,8 @@ export default function ListRestaurants(props) {
             />
             ): (
                 <View style={styles.loaderRestaurants}>
-                    <ActivityIndicator size="large" />
-                        <Text>Cargando Restaurantes...</Text>
+                    <ActivityIndicator size={50} style={{ padding: 5, backgroundColor: 'transparent', margin:10 }} color={"#f00"}/>
+                        <Text style={{color: "#0b0b0b", padding: 3 ,margin: 10, fontSize:17, fontWeight: "bold",fontStyle: "italic" }}>Cargando Restaurantes...</Text>
                 </View>
             )  
          }
@@ -50,7 +50,7 @@ function Restaurant(props) {
                 <View style={styles.viewRestaurantImage}>
                     <Image 
                         resizeMode="cover"
-                        PlaceholderContent={<ActivityIndicator color="red" />}
+                        PlaceholderContent={<ActivityIndicator color="red" style={{backgroundColor: "#000", borderRadius: 100, padding:15}}/>}
                         source={
                             imageRestaurant 
                             ? {uri: imageRestaurant} 
@@ -87,7 +87,7 @@ function FooterList(props){
    } else {
        return(
            <View style={styles.notFoundMore}>
-               <Text>No hay más para ver vuelve más tarde..</Text>
+               <Text style={{color: "#99999999", fontStyle: 'italic',}}>No hay más para ver vuelve más tarde..</Text>
            </View>
        )
    }
@@ -99,16 +99,21 @@ const styles = StyleSheet.create({
         backgroundColor: "#f5f5f5f7",
     },
     loaderRestaurants: {
-        flex: 1,
-        justifyContent: "center",
+        position: "absolute",
+        top: "50%", 
+        left: "25%",
         alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: 'transparent',
     },
     viewRestaurant: {
         flexDirection: "row",
         margin: 10,
+
     },
     viewRestaurantImage: {
         marginRight: 15,
+
     },
     viewImages: {
       width:  150,
@@ -116,6 +121,7 @@ const styles = StyleSheet.create({
     },
     viewContainerImages: {
         borderRadius: 20,
+        elevation: 50,
     },
     restaurantName: {
         fontSize: 20,

@@ -8,13 +8,13 @@ export default function Loading(props) {
   return (
    <Overlay 
        isVisible = {isVisible}
-       windowBackgroundColor = "rgba(0, 0, 0, 0.4)"
+       windowBackgroundColor = "rgba(0, 0, 0, 0.0001)"
        overlayBackgroundColor = "transparent"
        overlayStyle = {styles.overlay}
     >  
 
      <View style={styles.view}>
-            <ActivityIndicator size="large" color="#00a680" />
+            <ActivityIndicator size={60} color="#f00"/>
       {text && <Text style={styles.text}>{text}</Text>}
     </View>
    </Overlay>
@@ -25,13 +25,13 @@ export default function Loading(props) {
 
     const styles = StyleSheet.create({
         overlay: {
-            height: 100,
-            width: 200,
-            backgroundColor: "#fff",
-            borderColor: "#00a680",
-            borderWidth: 2,
-            borderRadius: 10,
-            opacity: 0.5,
+            height: 1000,
+            width: 1000,
+            backgroundColor: "transparent",
+            // borderColor: "#00a680",
+            // borderWidth: 2,
+            // borderRadius: 1,
+            opacity: 2,
         },
         view: {
             flex: 1,
@@ -39,9 +39,11 @@ export default function Loading(props) {
             justifyContent: "center",
         },
         text: {
-            fontSize: 15,
-            color: "#242424",
-            textTransform:"uppercase" ,
+            fontSize: 19,
+            fontStyle: "italic",
+            fontWeight: "bold",
+            color: "#000",
+            // textTransform:"uppercase" ,
             marginTop: 10,
         }
     });

@@ -64,6 +64,7 @@ export default function ChangeEmailForm(props) {
     return(
         <View style={styles.view}>
             <Input 
+                inputStyle={{fontSize: 14,}}
                 placeholder="Nuevo correo electrónico"
                 containerStyle={styles.inputEmail}
                 defaultValue= { email || "" }
@@ -76,6 +77,7 @@ export default function ChangeEmailForm(props) {
                 errorMessage={errors.email}
             />
             <Input 
+            inputStyle={{fontSize: 14,}}
             placeholder="Contraseña para confirmar cambio"
             containerStyle={styles.inputEmail}
             password={true}
@@ -89,6 +91,7 @@ export default function ChangeEmailForm(props) {
             onChange={(e) => onChange(e, "password")}
             />
             <Button 
+               titleStyle={{fontSize: 15,}}
                title="Cambiar correo electrónico"
                containerStyle={styles.btnContainer}
                buttonStyle={styles.btn}
@@ -117,6 +120,7 @@ const styles = StyleSheet.create({
     btnContainer: {
         marginTop: 15,
         width: "95%",
+        marginBottom: 10,
     },
     btn: {
         backgroundColor: "#00a680",

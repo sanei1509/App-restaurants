@@ -41,6 +41,7 @@ export default function ChangeDisplayName(props) {
     return(
         <View style={styles.view}>
             <Input
+                inputStyle={{fontSize: 14,}}
                 placeholder="Nombre de usuario"
                 containerStyle={styles.inputForm}
                 rightIcon={{
@@ -55,6 +56,7 @@ export default function ChangeDisplayName(props) {
 
             <Button 
                 title="Cambiar nombre"
+                titleStyle={{fontSize: 14,}}
                 containerStyle={styles.btncContainer}
                 buttonStyle={styles.btnChange}
                 onPress={onSubmit}
@@ -76,9 +78,10 @@ const styles = StyleSheet.create({
         btncContainer: {
             marginTop: 20,
             width: "95%",
+            marginBottom: 10,
         },
         btnChange: {
-            backgroundColor: "#00a680"
-        },
+            backgroundColor: "#00a680",
+        }
 
 });
