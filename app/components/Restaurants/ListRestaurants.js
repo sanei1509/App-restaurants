@@ -116,12 +116,12 @@ const styles = StyleSheet.create({
 
     },
     viewImages: {
-      width:  150,
-      height: 140,
+      width:  140,
+      height: 120,
     },
     viewContainerImages: {
         borderRadius: 20,
-        elevation: 50,
+        elevation: 20,
     },
     restaurantName: {
         fontSize: 20,

@@ -90,7 +90,7 @@ export default function Favorites(props){
                                 navigation={navigation}
                             />
                         }
-                keyExtractor={(item, index) => index.toString }                 
+                keyExtractor={(item, index) => index.toString()}                 
             />
         ) :(
          <View style={styles.loaderRestaurants}>
